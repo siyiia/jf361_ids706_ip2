@@ -1,0 +1,39 @@
+name: RustCI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Set up Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          override: true
+      - name: check code
+        run: make check
+      - name: format code
+        run: make format
+      - name: lint
+        run: make lint
+      - name: test
+        run: make test
+      - name: run
+        run: make run
+      - name: Build release binary
+        run: make release
+      - name: Upload binary artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: sqlite-cli-binary
+          path: target/release/sqlite
