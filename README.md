@@ -2,7 +2,7 @@
 [![RustCI](https://github.com/siyiia/jf361_ids706_ip2/actions/workflows/RustCI.yml/badge.svg)](https://github.com/siyiia/jf361_ids706_ip2/actions/workflows/RustCI.yml)
 
 ### Video Link
-[Watch the video here]()
+[Watch the video here](https://youtu.be/jofzwGq6z68)
 
 ## Project Introduction
 This project is about Rust CLI Binary with SQLite
