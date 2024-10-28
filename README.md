@@ -1,63 +1,125 @@
 # jf361_ids706_ip1
-[![Install](https://github.com/siyiia/jf361_ids706_ip1/actions/workflows/install.yml/badge.svg)](https://github.com/siyiia/jf361_ids706_ip1/actions/workflows/install.yml)
-[![Format](https://github.com/siyiia/jf361_ids706_ip1/actions/workflows/format.yml/badge.svg)](https://github.com/siyiia/jf361_ids706_ip1/actions/workflows/format.yml)
-[![Lint](https://github.com/siyiia/jf361_ids706_ip1/actions/workflows/lint.yml/badge.svg)](https://github.com/siyiia/jf361_ids706_ip1/actions/workflows/lint.yml)
-[![Test](https://github.com/siyiia/jf361_ids706_ip1/actions/workflows/test.yml/badge.svg)](https://github.com/siyiia/jf361_ids706_ip1/actions/workflows/test.yml)
+[![RustCI](https://github.com/siyiia/jf361_ids706_ip2/actions/workflows/RustCI.yml/badge.svg)](https://github.com/siyiia/jf361_ids706_ip2/actions/workflows/RustCI.yml)
 
 ### Video Link
-[Watch the video here](https://youtu.be/MlAygC5vZME)
+[Watch the video here]()
 
 ## Project Introduction
-This project is about continuous integration using GitHub actions of python data science project
+This project is about Rust CLI Binary with SQLite
 
 ## Project Structure
 ```angular2html
 project/
-├── .devcontainer/
-│   ├── devcontainer.json
-│   └── Dockerfile
-│
-│
 ├── .github/
 │   └── workflows/
-│       ├── install.yml
-│       ├── format.yml
-│       ├── lint.yml
-│       └── test.yml
+│       └── RustCI.yml
 │
 ├── src/
-│   ├── script.py
-│   └── lib.py
+│   ├── lib.rs
+│   └── main.rs
 │
-├── tests/
-│   ├── test_script.py 
-│   └── test_lib.py
-│
-├── main.ipynb
 ├── Makefile
-├── requirements.txt
+├── Cargo.toml
 ├── README.md
 ```
 
 ## Project Description
-This project demonstrates how to implement Continuous Integration (CI) for a Python-based data science project using GitHub CI. The project includes functionality for performing descriptive statistics using Pandas, automated testing with the pytest-nbval plugin for Jupyter Notebooks, code formatting, linting, and testing. A Makefile is used to streamline running tasks, while GitHub CI is used to automatically execute these tasks in the pipeline. This ensures high-quality, maintainable code through automated checks and tests.
+This project is a command-line interface (CLI) tool written in Rust to manage a simple SQLite database. It allows users 
+to perform operations such as creating tables, inserting records, updating records, and executing custom SQL queries.
 
-## Project Setup
-For Mini Project 2 with a similar structure but with added functions for the testing and Makefile.
-1. Formats Python code using `black`
-<p align="center">
-  <img src="screenshots/format.png" />
-</p>
+## Project Features
+- Create Table: Initializes a new table in the SQLite database. 
+- Insert Record: Adds a new entry to the table. 
+- Update Record: Modifies an existing entry based on specified criteria. 
+- Delete Record: Deletes a specific entry. 
+- Delete Table: Deletes a specific table. 
+- Execute SQL Query: Executes custom SQL commands on the database.
 
-2. Lints the code using `ruff` to catch any errors or style issues.
-<p align="center">
-  <img src="screenshots/lint.png" />
-</p>
+## Project Dependencies
+The project is built with Rust and relies on the following dependencies:
+- rusqlite: For interfacing with SQLite databases. 
+- clap: For handling command-line arguments and subcommands.
 
-3. Runs both notebook and script tests using `pytest` with `nbval` to ensure correctness.
-<p align="center">
-  <img src="screenshots/test.png" />
-</p>
+## Project Usage
+### 1. Clone the Repository
+```
+git clone https://github.com/siyiia/jf361_ids706_ip2.git
+cd jf361_ids706_ip2
+```
+### 2. Build the Project
+Compile the project in release mode to create an optimized binary:
+```
+cargo build --release
+```
+The compiled binary will be located at target/release/sqlite.
+### 3. Running the Program
+You can run the CLI tool directly from the command line. Here are the main commands:
+1. Create a Table:
+   ```
+   ./target/release/sqlite create_table
+   ```
+   Screenshot of successfully perform **Create a Table**
+   <p>
+     <img width="400" src="screenshots/create table.png" />
+   </p>
+2. Insert a Record:
+   ```
+   ./target/release/sqlite create <id> <name> <age> <major>
+   ```
+   Screenshot of successfully perform **Insert a Record**
+   <p>
+     <img width="400" src="screenshots/add.png" />
+   </p>
+3. Read a Specific Record:
+   ```
+   ./target/release/sqlite read <id>
+   ```
+4. Read All Records:
+   ```
+   ./target/release/sqlite read
+   ```
+   Screenshot of successfully perform **Read a Specific Record** and **Read All Records**
+   <p>
+     <img width="400" src="screenshots/read.png" />
+   </p>
+5. Update a Record:
+   ```
+   ./target/release/sqlite update <id> <column> <new_value>
+   ```
+   Screenshot of successfully perform **Update a Record** for **Age** column
+   <p>
+     <img width="400" src="screenshots/update1.png" />
+   </p>
+   
+   Screenshot of successfully perform **Update a Record** for **Major** column
+   <p>
+     <img width="400" src="screenshots/update2.png" />
+   </p>
+6. Delete a Record:
+   ```
+   ./target/release/sqlite delete_row <id>
+   ```
+   Screenshot of successfully perform **Delete a Record**
+   <p>
+     <img width="400" src="screenshots/delete.png" />
+   </p>
+7. Delete a Table:
+   ```
+   ./target/release/sqlite delete_table
+   ```
+   Screenshot of successfully perform **Delete a Table**
+   <p>
+     <img width="400" src="screenshots/delete table.png" />
+   </p>
+8. Execute a SQL Query:
+   ```
+   ./target/release/sqlite query "<SQL query>"
+   ```
+   Screenshot of successfully perform **Execute a SQL Query**
+   <p>
+     <img width="400" src="screenshots/query.png" />
+   </p>
 
-## Project Output
-The markdown summary report is under the `output` dictionary with name `summary_report.md`. You can find them here [Summary Report](./output/summary_report.md).
+## LLM Usage
+Since I am not familiar with Rust, I used ChatGPT to help translate my ideas into functional code.
+Additionally, when I encountered errors, I asked it to give me solutions.
