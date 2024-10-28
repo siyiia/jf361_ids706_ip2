@@ -60,7 +60,7 @@ You can run the CLI tool directly from the command line. Here are the main comma
    ```
    Screenshot of successfully perform **Create a Table**
    <p>
-     <img width="500" src="screenshots/create table.png" />
+     <img width="600" src="screenshots/create table.png" />
    </p>
 2. Insert a Record:
    ```
@@ -68,7 +68,7 @@ You can run the CLI tool directly from the command line. Here are the main comma
    ```
    Screenshot of successfully perform **Insert a Record**
    <p>
-     <img width="500" src="screenshots/add.png" />
+     <img width="600" src="screenshots/add.png" />
    </p>
 3. Read a Specific Record:
    ```
@@ -80,7 +80,7 @@ You can run the CLI tool directly from the command line. Here are the main comma
    ```
    Screenshot of successfully perform **Read a Specific Record** and **Read All Records**
    <p>
-     <img width="500" src="screenshots/read.png" />
+     <img width="600" src="screenshots/read.png" />
    </p>
 5. Update a Record:
    ```
@@ -88,12 +88,12 @@ You can run the CLI tool directly from the command line. Here are the main comma
    ```
    Screenshot of successfully perform **Update a Record** for **Age** column
    <p>
-     <img width="500" src="screenshots/update1.png" />
+     <img width="600" src="screenshots/update1.png" />
    </p>
    
    Screenshot of successfully perform **Update a Record** for **Major** column
    <p>
-     <img width="500" src="screenshots/update2.png" />
+     <img width="600" src="screenshots/update2.png" />
    </p>
 6. Delete a Record:
    ```
@@ -101,7 +101,7 @@ You can run the CLI tool directly from the command line. Here are the main comma
    ```
    Screenshot of successfully perform **Delete a Record**
    <p>
-     <img width="500" src="screenshots/delete.png" />
+     <img width="600" src="screenshots/delete.png" />
    </p>
 7. Delete a Table:
    ```
@@ -109,7 +109,7 @@ You can run the CLI tool directly from the command line. Here are the main comma
    ```
    Screenshot of successfully perform **Delete a Table**
    <p>
-     <img width="500" src="screenshots/delete table.png" />
+     <img width="600" src="screenshots/delete table.png" />
    </p>
 8. Execute a SQL Query:
    ```
@@ -117,7 +117,7 @@ You can run the CLI tool directly from the command line. Here are the main comma
    ```
    Screenshot of successfully perform **Execute a SQL Query**
    <p>
-     <img width="500" src="screenshots/query.png" />
+     <img width="600" src="screenshots/query.png" />
    </p>
 
 ## LLM Usage
