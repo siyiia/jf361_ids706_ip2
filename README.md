@@ -126,7 +126,7 @@ You can run the CLI tool directly from the command line. Here are the main comma
 
 ## LLM and Copilot Usage
 - **ChatGPT**: For debugging and bug fixing, I used ChatGPT to help troubleshoot problems in Rust code. ChatGPT 
-explained error messages, provided solutions of fixing specific problems.
+explained error messages and provided solutions of fixing specific problems.
 - **Copilot**: Since I am not familiar with Rust, I used Copilot to help me translate my idea into Rust code. 
 For each function, I started by typing out the function signature or a brief description of the functionality 
 I wanted to implement. Copilot then generated the corresponding Rust code. Copilot also assisted in writing test 
