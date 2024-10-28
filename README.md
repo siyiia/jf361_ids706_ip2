@@ -17,6 +17,9 @@ project/
 ├── src/
 │   ├── lib.rs
 │   └── main.rs
+
+├── tests/
+│   └── sqlite_tests.rs
 │
 ├── Makefile
 ├── Cargo.toml
