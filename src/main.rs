@@ -8,7 +8,7 @@ use sqlite::{
 fn main() -> rusqlite::Result<()> {
     let matches = Command::new("Student Database CLI")
         .version("1.0")
-        .author("Your Name")
+        .author("Jingjing Feng")
         .about("Manages a student database")
         .subcommand(Command::new("create_table").about("Creates the students table"))
         .subcommand(
