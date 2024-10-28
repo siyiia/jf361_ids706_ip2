@@ -30,6 +30,7 @@ to perform operations such as creating tables, inserting records, updating recor
 ## Project Features
 - Create Table: Initializes a new table in the SQLite database. 
 - Insert Record: Adds a new entry to the table. 
+- Read Records: Read the records from the database.
 - Update Record: Modifies an existing entry based on specified criteria. 
 - Delete Record: Deletes a specific entry. 
 - Delete Table: Deletes a specific table. 
